@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>TMJ e Misturado</title>
+        
+</head>
+<body>
+
+    <nav class="navegacao">
+        <div class="logo">
+            <img class="logo-img" src="../IMGS/Logo-nova.png" alt="Logo da TMJ e Misturado">
+        </div>
+        <div class="menu">
+            <a href="../HTML/index.html">Home</a>
+            <a href="../HTML/sobre_nox.html">Sobre Nós</a>
+            <a href="../HTML/fale_conosco.html" id="botao">Fale Conosco</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="texto">
+            <h1>TMJ e Misturado</h1>
+            <h2>Fazendo a Diferença</h2>
+            <p>A Família Tamo Junto e Misturado nasceu da paixão por carros e do desejo de ajudar o próximo. O que começou como um grupo de amigos se transformou em uma equipe dedicada a ações sociais, como distribuição de alimentos e campanhas solidárias. Desde sua formação em 2023, o grupo promove eventos e arrecadações para apoiar comunidades, contando sempre com o esforço de seus integrantes e doações de parceiros. Mais do que um grupo automotivo, a TMJ e Misturado representa união e solidariedade. Nos acompanhe no Instagram para saber mais sobre nossas ações!</p>
+            <a href="https://www.instagram.com/tmjemisturado2023/" target="_blank" class="contato-botao">Instagram</a>
+        </div>
+        <div class="texto-img">
+            <img style="max-width: 80%;" src="../IMGS/Familia-removebg-preview.png" alt="">
+        </div>
+    </header><br>
+
+    <section>
+        <h2>Nossos Projetos: Solidariedade em Ação</h2>
+
+        <div class="projetos">
+
+            <div class="card" data-link="../HTML/sobre_nox.html#campanha-arrecadacao">
+                <img src="../IMGS/solidarity (1).png" alt="Campanha de Arrecadação de Alimentos">
+                <h3>Campanha de Arrecadação de Alimentos</h3>
+                <p>Coleta e distribuição de cestas básicas para famílias carentes.</p>
+            </div>
+            
+            <div class="card" data-link="../HTML/sobre_nox.html#missao-caxias">
+                <img src="../IMGS/solidarity.png" alt="Missão Solidária em Caxias do Sul">
+                <h3>Missão Solidária em Caxias do Sul</h3>
+                <p>Viagem para levar doações e apoio a comunidades necessitadas.</p>
+            </div>
+
+            <div class="card" data-link="../HTML/sobre_nox.html#distribuicao-cestas">
+                <img src="../IMGS/helping-hand.png" alt="Distribuição de Cestas Básicas">
+                <h3>Distribuição de Cestas Básicas: Alimentando Esperança</h3>
+                <p>Entrega de alimentos essenciais para quem mais precisa.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-rodape">
+            <h1 class="TMJ">TMJ e Misturado</h1>
+            <b>© 2025 TMJ e Misturado. Todos os direitos reservados. É proibida a reprodução total ou parcial deste conteúdo sem autorização.</b>
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+<script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+        const link = card.getAttribute('data-link');
+        if (link) {
+            window.location.href = link;
+        }
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding-top: 110px; 
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navegacao {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    flex: 20%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.logo-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: solid 2px #cfa95e;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #cfa95e;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.menu a:hover {
+    color: red;
+    border-bottom: 1px solid #cfa95e;
+    transition: color 0.5s ease, border-bottom 0.5s ease;
+}
+
+#botao {
+    background-color: red;
+    padding: 10px 25px;
+    border-radius: 10px;
+    color: black;
+    margin-right: 10%;
+    margin-left: 5%;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#botao:hover {
+    background-color: #cfa95e;
+    color: beige;
+}
+
+/* HEADER GERAL */
+.header,
+.header_h {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.texto,
+.texto-img {
+    flex: 40%;
+    margin: 20px;
+}
+
+.texto h1 {
+    font-family: "Gravitas One", serif;
+    font-size: 40px;
+    color: #cfa95e;
+    letter-spacing: 10px;
+}
+
+.texto h2 {
+    font-size: 30px;
+}
+
+.texto p {
+    color: gray;
+    text-align: justify;
+}
+
+.contato-botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3897f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contato-botao:hover {
+    cursor: pointer;
+    background-color: #cfa95e;
+}
+
+section {
+    margin: 80px 5%;
+    text-align: center;
+    padding: 5%;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 35px;
+    font-family: "Gravitas One", serif;
+    color: #cfa95e;
+    padding-top: 55px;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top: solid 2px red;
+}
+
+.TMJ {
+    font-family: "Gravitas One", serif;
+}
+
+/* SOBRE NÓS */
+.texto_t {
+    flex: 20%;
+    margin: 70px 10%;
+    padding: 30px;
+    color: white;
+    background-image: url('../IMGS/Kombis.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15%;
+    border: solid 1px red;
+}
+
+.texto_t h1 {
+    color: #cfa95e;
+    font-family: "Gravitas One", serif;
+    letter-spacing: 2px;
+}
+
+.texto_t h2 {
+    color: white;
+}
+
+.acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img_caxias,
+.caxias {
+    flex: 1 1 40%;
+}
+
+.img_caxias img {
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    margin-top: 125px;
+}
+
+.caxias p {
+    text-align: justify;
+    margin: 50px;
+}
+
+.final_sobre {
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+    font-size: 20px;
+    color: #333;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* FALE CONOSCO */
+.frase-contato {
+    text-align: center;
+    padding: 50px 10px 10px;
+}
+
+.area-cartoes {
+    margin: 60px auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cartao-contato {
+    background: #fff;
+    width: 260px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.cartao-contato:hover {
+    transform: scale(1.04);
+}
+
+.cartao-contato img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.cartao-contato h2 {
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: #cfa95e;
+    text-transform: uppercase;
+}
+
+.cartao-contato .funcao {
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.cartao-contato .email,
+.cartao-contato .tel {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 4px;
+}
+
+.botao-contato {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #3897f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.botao-contato:hover {
+    background-color: #cfa95e;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .header,
+    .header_h {
+        flex-direction: column;
+        height: auto;
+        padding-top: 130px;
+    }
+
+    .texto,
+    .texto-img,
+    .texto_t,
+    .caxias,
+    .img_caxias {
+        flex: 100%;
+        margin: 20px 0;
+    }
+
+    .menu {
+        flex: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .logo-img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .img_caxias img {
+        max-width: 90%;
+    }
+
+    .cartao-contato {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .texto h1 {
+        font-size: 28px;
+    }
+
+    .texto h2 {
+        font-size: 22px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    #botao {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+    .contato-botao {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+}
